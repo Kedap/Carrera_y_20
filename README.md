@@ -15,7 +15,9 @@ Python 3
 Ejecución
 Para ejecutar el juego, abre una terminal o línea de comando en la carpeta que contiene el archivo carrera_20.py, y luego escribe el siguiente comando:
 
-python carrera_20.py
+```sh
+python juego.py
+```
 
 Contribuir
 Este proyecto es de código abierto y se aceptan contribuciones. Si deseas contribuir, haz lo siguiente:
