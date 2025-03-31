@@ -5,7 +5,9 @@ while True:
 
     print("Squid Games")
     print("Bienvenido al juego carrera 20")
-    print("Instrucciones: El jugador 1 deberas colocar un numero, ya sea 1 o 2, el numero que digites se iran acomulando y se sumaran con el numero (1 o 2) del jugador 2, el primero en conseguir que la sumatoria les de 20 gana ")
+    print(
+        "Instrucciones: El jugador 1 deberas colocar un numero, ya sea 1 o 2, el numero que digites se iran acomulando y se sumaran con el numero (1 o 2) del jugador 2, el primero en conseguir que la sumatoria les de 20 gana "
+    )
     print("Que empiece el juego")
 
     jugador_1 = input("Jugador 1, favor de escribir tu nombre: ")
@@ -16,12 +18,12 @@ while True:
     suma_parcial = 0
 
     while suma_parcial < 20:
-        numero = input(
-            f"{jugador_actual}, por favor escribe un número del 1 al 2: ")
+        numero = input(f"{jugador_actual}, por favor escribe un número del 1 al 2: ")
         while not validar_numero(numero):
             print("Número inválido")
             numero = input(
-                f"{jugador_actual}, por favor escribe un número válido del 1 al 2: ")
+                f"{jugador_actual}, por favor escribe un número válido del 1 al 2: "
+            )
         suma_parcial = sumar_numero(suma_parcial, jugador_actual, numero)
         if suma_parcial >= 20:
             print(f"Felicidades {jugador_actual}, ¡ganaste!")
